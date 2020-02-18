@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0271D66C23FBD038006CB55C /* ChheanUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0271D66B23FBD037006CB55C /* ChheanUI.framework */; };
+		0271D66E23FBD040006CB55C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0271D66D23FBD040006CB55C /* UIKit.framework */; platformFilter = ios; };
 		02DAB47023FB7DB400799624 /* ChheanUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 02DAB46E23FB7DB400799624 /* ChheanUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		02DAB47723FB7DDF00799624 /* DynamicTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DAB47623FB7DDF00799624 /* DynamicTableView.swift */; };
 		02DAB47E23FB7F2C00799624 /* AppExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DAB47A23FB7F2B00799624 /* AppExtension.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0271D66B23FBD037006CB55C /* ChheanUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ChheanUI.framework; sourceTree = "<group>"; };
+		0271D66D23FBD040006CB55C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		02DAB46B23FB7DB400799624 /* ChheanUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChheanUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		02DAB46E23FB7DB400799624 /* ChheanUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChheanUI.h; sourceTree = "<group>"; };
 		02DAB46F23FB7DB400799624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -34,6 +38,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				02DAB4AE23FB84C600799624 /* Foundation.framework in Frameworks */,
+				0271D66E23FBD040006CB55C /* UIKit.framework in Frameworks */,
+				0271D66C23FBD038006CB55C /* ChheanUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +66,7 @@
 		02DAB46D23FB7DB400799624 /* ChheanUI */ = {
 			isa = PBXGroup;
 			children = (
+				0271D66B23FBD037006CB55C /* ChheanUI.framework */,
 				02DAB47A23FB7F2B00799624 /* AppExtension.swift */,
 				02DAB47C23FB7F2B00799624 /* SLCCustomView.swift */,
 				02DAB47D23FB7F2C00799624 /* UIColor+Extension.swift */,
@@ -74,6 +81,7 @@
 		02DAB4AC23FB84C600799624 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0271D66D23FBD040006CB55C /* UIKit.framework */,
 				02DAB4AD23FB84C600799624 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -300,6 +308,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ChheanUI",
+				);
 				INFOPLIST_FILE = ChheanUI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -329,6 +341,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ChheanUI",
+				);
 				INFOPLIST_FILE = ChheanUI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;

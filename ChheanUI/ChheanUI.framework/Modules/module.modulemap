@@ -1,0 +1,11 @@
+framework module ChheanUI {
+  umbrella header "ChheanUI.h"
+
+  export *
+  module * { export * }
+}
+
+module ChheanUI.Swift {
+    header "ChheanUI-Swift.h"
+    requires objc
+}

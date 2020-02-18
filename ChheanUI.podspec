@@ -24,7 +24,7 @@ Pod::Spec.new do |spec|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = "ChheanUI is the best UI Framework"
+  spec.description  = "ChheanUI is the best UI Framework that you can use to build wonderfull UI for your app."
   spec.homepage     = "http://sourleangchhean.com/ChheanUI"
   # spec.screenshots  = "www.sourleangchhean.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
@@ -61,8 +61,8 @@ Pod::Spec.new do |spec|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  #spec.platform     = :ios
-  spec.platform     = :ios, "11.0"
+  spec.platform     = :ios
+  #spec.platform     = :ios, "11.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
@@ -77,7 +77,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  #spec.source       = { :git => "http://EXAMPLE/ChheanUI.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/sourleangchhean168/ChheanUI.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -88,8 +88,8 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
+ spec.source_files  = 'ChheanUI/*.{h,m,framework}'
+ # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 
